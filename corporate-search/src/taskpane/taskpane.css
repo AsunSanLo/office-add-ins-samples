@@ -18,13 +18,18 @@
  
  .ms-welcome__header {
     padding: 20px;
-    padding-bottom: 30px;
-    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+ }
+ 
+ .ms-welcome__header > h1 {
+    font-size: 25px;
+    margin-left: 12px;
  }
 
  .ms-welcome__main {
@@ -38,7 +43,7 @@
     align-items: center;
     -webkit-flex: 1 0 0;
     flex: 1 0 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
  }
  
  .ms-welcome__main > h2 {
@@ -77,4 +82,36 @@
 
 b {
     font-weight: bold;
+}
+
+
+.pc-item-title {
+    color: #25cbff;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 1.2em;
+}
+.pc-item {
+    margin: 12px;
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(237, 235, 233);
+    cursor: pointer;
+}
+.pc-item:hover {
+    background-color: rgb(250, 250, 250);
+    border-color: rgb(217, 217, 217);
+}
+
+.ms-welcome .pc-spinner {
+    margin-top: 24px;
+}
+
+.pc-spinner .ms-Spinner-label {
+    color: #25cbff;
+}
+.pc-spinner .ms-Spinner-circle {
+    border-color: rgb(37, 203, 255) rgb(220, 247, 255) rgb(220, 247, 255);
+    font-size: 16px;
 }
